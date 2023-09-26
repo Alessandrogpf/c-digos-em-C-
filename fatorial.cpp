@@ -10,17 +10,12 @@ int main(){
     cout<<"Digite um número: "; // Interface para o usuário
     cin>>num; // Entrada de um número para o calculo do fatorial
 
-    if(num>0){   // O calculo a seguir funciona para números maiores que 0
+    if(num > 0){
     for(int i = 1; i <= num; i++)
     fat *= i;
-
+    
     cout<< "O fatorial de "<< num << " é "<< fat << endl;
-    }
-    if(num == 0){ // Tratamento do caso num = 0
-        fat = 1;
-        cout<<"O fatorial de 0 é: "<<fat<<endl;
-    }
-    if (num<0){ //Tratamento do caso num < 0
+    } else{ //Tratamento do caso num < 0
         cout<<"Não é possível calcular o fatorial de números negativos!"<<endl;
     }
     
